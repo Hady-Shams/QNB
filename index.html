@@ -13,6 +13,7 @@ button {padding:12px 20px; background:#1b2a6d; color:#fff; border:none; margin-t
 <button onclick="find()">Find My Table</button><div class="result" id="res"></div></div><script>
 
 function getLocation(table){
+if(table=0) return "Back Area";
 if(table<=6) return "Front Area";
 if(table<=16) return "Front Middle Area";
 if(table<=36) return "Center Area";
